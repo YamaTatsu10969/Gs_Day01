@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oa7-Qm-Q4k">
+                                <rect key="frame" x="32" y="202" width="350" height="30"/>
+                                <state key="normal" title="下からニュッと出る"/>
+                                <connections>
+                                    <action selector="tapFullScreenButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pbb-Hf-jeq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjP-WZ-QqK">
+                                <rect key="frame" x="23" y="296" width="359" height="30"/>
+                                <state key="normal" title="ナビゲーションをつける"/>
+                                <connections>
+                                    <action selector="tapNavigationButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kCV-oa-dpX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMk-UD-iq0">
+                                <rect key="frame" x="32" y="108" width="350" height="30"/>
+                                <state key="normal" title="下からニュッと出て、中途半端な位置"/>
+                                <connections>
+                                    <action selector="tapModalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvX-F8-swL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qjP-WZ-QqK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="DOL-Yn-wuq"/>
+                            <constraint firstItem="xMk-UD-iq0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="64" id="H0b-Gl-NsA"/>
+                            <constraint firstItem="xMk-UD-iq0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="NfX-CI-wgk"/>
+                            <constraint firstItem="qjP-WZ-QqK" firstAttribute="top" secondItem="oa7-Qm-Q4k" secondAttribute="bottom" constant="64" id="Oeg-ee-UWL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qjP-WZ-QqK" secondAttribute="trailing" constant="32" id="cG1-Fd-VaF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xMk-UD-iq0" secondAttribute="trailing" constant="32" id="qla-bQ-vmI"/>
+                            <constraint firstItem="oa7-Qm-Q4k" firstAttribute="top" secondItem="xMk-UD-iq0" secondAttribute="bottom" constant="64" id="ujm-jg-JsU"/>
+                            <constraint firstItem="oa7-Qm-Q4k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="ylk-cZ-cwb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oa7-Qm-Q4k" secondAttribute="trailing" constant="32" id="zY0-fX-ruw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="139"/>
+        </scene>
+    </scenes>
+</document>
